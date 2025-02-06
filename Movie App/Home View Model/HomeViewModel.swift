@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-@Observable class HomeViewModel {
+@MainActor @Observable class HomeViewModel {
     
     private let apiManager : APIManager  = APIManager()
     var populars: [Movie] = []
